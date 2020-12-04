@@ -20,7 +20,7 @@ def btn_click():
     txt = 'Factorization - {},\n' \
           'Tried {} curves,\n' \
           'Point - P({}, {})\n' \
-          'Curve - Y^3 = X^3+({})X+({})\Time factorization - {} second'.\
+          'Curve - Y^3 = X^3+({})X+({})\nTime factorization - {} second'.\
         format(result['Factorization'], result['Curves'], result['X'], result['Y'], result['A'], result['B'], result['time'])
     BoxOutput.insert(1.0, txt)
 
