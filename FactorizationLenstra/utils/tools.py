@@ -13,31 +13,31 @@ def MiillerRabin(d, n): # Test Miller Rabin on prime number
   
     x = pow(a, d, n)
   
-    if (x == 1 or x == n - 1): 
+    if x == 1 or x == n - 1: 
         return True
 
-    while (d != n - 1): 
-        x = (x * x) % n
+    while d != n - 1: 
+        x = pow(x, 2, n)
         d *= 2 
   
-        if (x == 1): 
+        if x == 1: 
             return False
-        if (x == n - 1): 
+        if x == n - 1: 
             return True
   
     return False
 
 def isPrime(n): # Check on prime number
-    if (n <= 1 or n == 4): 
+    if n <= 1 or n == 4: 
         return False
-    if (n <= 3): 
+    if n <= 3: 
         return True
   
     t = n - 1; 
-    while (t % 2 == 0): 
+    while t % 2 == 0: 
         t //= 2
 
-    if (MiillerRabin(t, n) == False): 
+    if MiillerRabin(t, n) == False: 
         return False
   
     return True
