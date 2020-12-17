@@ -1,4 +1,4 @@
-# Tasks for Computer security
+# Theory of Computer security
 Basic computer security tasks 🖥🔒
 
 # Requirements
